@@ -46,17 +46,35 @@
       .menu {
         padding-top: 16px !important;
         padding-left: 16px !important;
+        padding-bottom: 10px !important;
         text-align: center;
       }
       .menu a {
-        margin-right: 12px !important;
         font-size: 18px !important;
         line-height: 21px !important;
+      }
+
+      .content table.menu-item {
+        display:inline-block!important;
+        width: auto !important;
+        float: none!important;
+      }
+
+      .menu-item-cell {
+        display:inline-block!important;
+        width: auto !important;
+        padding: 0 !important;
+        padding-right: 20px!important;
+        padding-bottom: 16px!important;
       }
 
       .mobile-padding {
         padding-left: 16px !important;
         padding-right: 16px !important;
+      }
+
+      .content .table-social-footer {
+        width: 152px !important;
       }
     }
   </style>
@@ -87,7 +105,7 @@
               <!-- Шапка -->
               <table align="center" width="100%" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                  <td>
+                  <td align="center">
                     <table align="center" cellpadding="0" cellspacing="0"
                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
                       <tr>
@@ -101,19 +119,92 @@
                 </tr>
               </table>
 
-              <!--Меню - переделал на более оптимальну вёрстку -->
+              <!--Меню-->
               <table width="100%" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                   <td class="menu" align="left"
-                      style="Margin:0;padding-top:48px;padding-left:32px;padding-right:20px;padding-bottom:10px;">
+                      style="Margin:0;padding-top:48px;padding-left:20px;padding-right:20px;padding-bottom:24px;">
+                    <!--[if mso]>
+                    <table style="width:560px" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="width:120px" valign="top"><![endif]-->
 
-                    <a href="#" target="_blank" title="Курсы" style="Margin-right:65px;Margin-bottom:16px;display:inline-block;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FF4B33;"><b>КУРСЫ</b></a>
+                    <table cellpadding="0" cellspacing="0" class="menu-item" align="left"
+                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;float:left;">
+                      <tr>
+                        <td class="menu-item-cell" align="center"
+                            style="padding:0;padding-left:12px;Margin:0;width:108px;">
+                          <table cellpadding="0" cellspacing="0" width="100%"
+                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
+                            <tr>
+                              <td align="left" style="padding:0;Margin:0;">
+                                <a href="#" target="_blank" title="Курсы" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FF4B33;"><b>КУРСЫ</b></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-                    <a href="#" target="_blank" title="Вебинары" style="Margin-right:65px;Margin-bottom:16px;display:inline-block;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#0B379B;"><b>ВЕБИНАРЫ</b></a>
+                    <!--[if mso]></td>
+                  <td style="width:140px;" valign="top"><![endif]-->
 
-                    <a href="#" target="_blank" title="О школе" style="Margin-right:65px;Margin-bottom:16px;display:inline-block;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#02BAD3;"><b>О&nbsp;ШКОЛЕ</b></a>
+                    <table cellpadding="0" cellspacing="0" class="menu-item" align="left"
+                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;float:left;">
+                      <tr>
+                        <td class="menu-item-cell" align="center" style="padding:0;Margin:0;width:140px;">
+                          <table cellpadding="0" cellspacing="0" width="100%"
+                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
+                            <tr>
+                              <td align="center" style="padding:0;Margin:0;">
+                                <a href="#" target="_blank" title="Вебинары" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#0B379B;"><b>ВЕБИНАРЫ</b></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-                    <a target="_blank" href="#" style="Margin-right:0px!important;Margin-bottom:16px;display:inline-block;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FFC81A;"><b>РАСПРОДАЖА</b></a>
+                    <!--[if mso]></td>
+                  <td style="width:140px;" valign="top"><![endif]-->
+
+                    <table cellpadding="0" cellspacing="0" class="menu-item" align="left"
+                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;float:left;">
+                      <tr>
+                        <td class="menu-item-cell" align="center" style="padding:0;padding-right:0!important;Margin:0;width:140px;">
+                          <table cellpadding="0" cellspacing="0" width="100%"
+                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
+                            <tr>
+                              <td align="center" style="padding:0;Margin:0;">
+                                <a href="#" target="_blank" title="О школе" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#02BAD3;"><b>О&nbsp;ШКОЛЕ</b></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]></td>
+                  <td style="width:0px;"></td>
+                  <td style="width:160px;" valign="top"><![endif]-->
+
+                    <table cellpadding="0" cellspacing="0" class="menu-item" align="right"
+                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;float:right;">
+                      <tr>
+                        <td class="menu-item-cell" align="center" style="padding:0;Margin:0;width:160px;">
+                          <table cellpadding="0" cellspacing="0" width="100%"
+                                 style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
+                            <tr>
+                              <td align="right" style="padding:0;Margin:0;text-align: right;">
+                                <a target="_blank" href="#" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FFC81A;"><b>РАСПРОДАЖА</b></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if mso]></td></tr></table><![endif]-->
                   </td>
                 </tr>
               </table>
@@ -395,30 +486,102 @@
                               <td align="left"
                                   style="Margin:0;padding-top:0px;padding-bottom:32px;padding-left:0px;padding-right:16px;">
 
-                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;line-height:19px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;"><b>Мы в социальных сетях</b></p>
-                                <p style="Margin:0;Margin-top:18px;Margin-bottom:24px;font-size:0px;">
-                                  <a href="#" target="_blank" title="Мы в Facebook">
-                                    <img src="https://academy.rychagov.me/email/images/common/facebook.png" alt="Facebook" width="24" height="24" border="0" style="border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"/>
-                                  </a>
-                                  <a href="#" target="_blank" title="Мы в Instagram" style="Margin-left:8px;">
-                                    <img src="https://academy.rychagov.me/email/images/common/inst.png" alt="Instagram" width="24" height="24" border="0" style="border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"/>
-                                  </a>
-                                  <a href="#" target="_blank" title="Мы в Youtube" style="Margin-left:8px;">
-                                    <img src="https://academy.rychagov.me/email/images/common/youtube.png" alt="Youtube" width="24" height="24" border="0" style="border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"/>
-                                  </a>
-                                  <a href="#" target="_blank" title="Мы в Telegram" style="Margin-left:8px;">
-                                    <img src="https://academy.rychagov.me/email/images/common/telegram.png" alt="Telegram" width="24" height="24" border="0" style="border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"/>
-                                  </a>
-                                  <a href="#" target="_blank" title="Мы в Вконтакте" style="Margin-left:8px;">
-                                    <img src="https://academy.rychagov.me/email/images/common/vk.png" alt="VK" width="24" height="24" border="0"/>
-                                  </a>
-                                </p>
-                                <p style="Margin:0;Margin-bottom:10px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;line-height:19px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;"><b>Свяжитесь с нами</b></p>
-                                <p style="Margin:0;Margin-bottom:8px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
-                                  <a href="mailto:study@htmlplay.com" title="Отправить письмо" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:none;color:#13D6C3;">study@htmlplay.com</a>
-                                </p>
-                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
-                                  <a href="tel:8-800-690-76-68" title="Позвонить" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:none;color:#13D6C3;">8-800-690-76-68</a>
+                                <table cellpadding="0" cellspacing="0"
+                                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-bottom:18px;">
+                                      <p
+                                        style="Margin:0; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;line-height:19px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <b>Мы в социальных сетях</b></p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <table class="table-social-footer" cellpadding="0" cellspacing="0"
+                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
+                                        <tr>
+                                          <td align="center" valign="top"
+                                              style="padding:0;Margin:0;padding-right:8px;font-size:0;">
+                                            <a href="#" target="_blank" title="Мы в Facebook">
+                                              <img
+                                                src="https://academy.rychagov.me/email/images/common/facebook.png"
+                                                alt="Facebook" width="24" height="24"
+                                                style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                border="0"/>
+                                            </a>
+                                          </td>
+                                          <td align="center" valign="top"
+                                              style="padding:0;Margin:0;padding-right:8px;font-size:0;">
+                                            <a href="#" target="_blank" title="Мы в Instagram">
+                                              <img src="https://academy.rychagov.me/email/images/common/inst.png"
+                                                   alt="Instagram" width="24" height="24"
+                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                   border="0"/>
+                                            </a>
+                                          </td>
+                                          <td align="center" valign="top"
+                                              style="padding:0;Margin:0;padding-right:8px;font-size:0;">
+                                            <a href="#" target="_blank" title="Мы в Youtube">
+                                              <img
+                                                src="https://academy.rychagov.me/email/images/common/youtube.png"
+                                                alt="Youtube" width="24" height="24"
+                                                style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                border="0"/></a>
+                                          </td>
+                                          <td align="center" valign="top"
+                                              style="padding:0;Margin:0;padding-right:8px;font-size:0;">
+                                            <a href="#" target="_blank" title="Мы в Telegram">
+                                              <img
+                                                src="https://academy.rychagov.me/email/images/common/telegram.png"
+                                                alt="Telegram" width="24" height="24"
+                                                style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                border="0"/>
+                                            </a>
+                                          </td>
+                                          <td align="center" valign="top" style="padding:0;Margin:0;font-size:0;">
+                                            <a href="#" target="_blank" title="Мы в Вконтакте">
+                                              <img src="https://academy.rychagov.me/email/images/common/vk.png"
+                                                   alt="VK" width="24" height="24"
+                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                   border="0"/>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-top:24px;padding-bottom:10px;">
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;line-height:19px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <b>Свяжитесь с нами</b></p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-bottom:8px;">
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <a href="mailto:study@htmlplay.com" title="Отправить письмо"
+                                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:none;color:#13D6C3;">study@htmlplay.com</a>
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;">
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <a href="tel:8-800-690-76-68" title="Позвонить"
+                                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:none;color:#13D6C3;">8-800-690-76-68</a></p>
+                                    </td>
+                                  </tr>
+                                </table>
 
                               </td>
                             </tr>
@@ -445,23 +608,74 @@
                               <td align="left"
                                   style="Margin:0;padding-top:0px;padding-bottom:32px;padding-right:0px;">
                                 <p style="Margin:0;Margin-bottom:18px;webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;line-height:19px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;"><b>Полезные ссылки</b></p>
-                                <ul style="Margin: 0;list-style: none;  padding: 0;">
-                                  <li style="Margin:0;Margin-bottom:8px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
-                                    <a href="#" target="_blank" title="Бесплатные вебинары" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Бесплатные вебинары</a>
-                                  </li>
-                                  <li style="Margin:0;Margin-bottom:8px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#141414;">
-                                    <a href="#" target="_blank" title="Обучающие курсы" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Обучающие курсы</a>
-                                  </li>
-                                  <li style="Margin:0;Margin-bottom:8px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#141414;">
-                                    <a href="#" target="_blank" title="Тесты" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Тесты</a>
-                                  </li>
-                                  <li style="Margin:0;Margin-bottom:8px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#141414;">
-                                    <a href="#" target="_blank" title="Наш блог" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Наш блог</a>
-                                  </li>
-                                  <li style="Margin:0;Margin-bottom:8px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#141414;">
-                                    <a href="#" target="_blank" title="Истории студентов" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Истории студентов</a>
-                                  </li>
-                                </ul>
+
+                                <table cellpadding="0" cellspacing="0"
+                                       style="Margin-top:18px;Margin-bottom:24px;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-bottom:8px;">
+
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <a href="#" target="_blank" title="Бесплатные вебинары"
+                                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Бесплатные
+                                          вебинары</a>
+                                      </p>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-bottom:8px;">
+
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <a href="#" target="_blank" title="Обучающие курсы"
+                                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Обучающие
+                                          курсы</a>
+                                      </p>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-bottom:8px;">
+
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <a href="#" target="_blank" title="Тесты"
+                                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Тесты</a>
+                                      </p>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-bottom:8px;">
+
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <a href="#" target="_blank" title="Наш блог"
+                                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Наш
+                                          блог</a>
+                                      </p>
+
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top"
+                                        style="padding:0;Margin:0;padding-bottom:8px;">
+
+                                      <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;line-height:16px;font-family:'trebuchet ms', tahoma, sans-serif;color:#333333;">
+                                        <a href="#" target="_blank" title="Истории студентов"
+                                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;text-decoration:underline;color:#141414;">Истории
+                                          студентов</a>
+                                      </p>
+
+                                    </td>
+                                  </tr>
+                                </table>
                               </td>
                             </tr>
                             </tbody>
