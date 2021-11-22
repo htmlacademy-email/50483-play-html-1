@@ -47,4 +47,3 @@ git clone SSH-адрес_вашего_форка
 <a href="https://htmlacademy.ru/intensive/email"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[Вёрстка email-рассылок](https://htmlacademy.ru/intensive/email)» от [HTML Academy](https://htmlacademy.ru).
-
